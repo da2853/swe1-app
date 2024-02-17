@@ -1,0 +1,138 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWE1-APP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            color: #333;
+            overflow: auto;
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff8e1;
+            color: #ff4081;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+            flex: 0;
+
+        }
+
+        h1:hover {
+            transform: scale(1.2);
+        }
+
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background-color: #ffcccc;
+            border-radius: 0 0 45px 45px;
+            position: relative;
+            animation: float 5s ease-in-out infinite;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .balloon:hover {
+            transform: scale(2);
+        }
+
+        .balloons-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            flex: 0;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .balloon:nth-child(odd) {
+            background-color: #f3a683;
+            animation-duration: 6s;
+        }
+
+        .balloon:nth-child(even) {
+            background-color: #786fa6;
+            animation-duration: 4s;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .balloon {
+                width: 40px;
+                height: 60px;
+            }
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        footer {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 1rem;
+            color: #fff;
+            background: #333;
+            flex: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="balloons-container">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+        <h1>Welcome to NYU Software Engineering I: CS-GY 6063!</h1>
+        <div class="balloons-container">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+    </main>
+</body>
+
+
+</html>
