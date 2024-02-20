@@ -20,7 +20,8 @@
             overflow: auto;
         }
 
-        h1, .redirect-banner {
+        h1,
+        .redirect-banner {
             font-family: 'Lobster', cursive;
             text-align: center;
             font-size: 2.5rem;
@@ -34,7 +35,8 @@
             flex: 0;
         }
 
-        h1:hover, .redirect-banner:hover {
+        h1:hover,
+        .redirect-banner:hover {
             transform: scale(1.2);
             cursor: pointer;
         }
@@ -63,6 +65,7 @@
         }
 
         @keyframes float {
+
             0%,
             100% {
                 transform: translateY(0);
@@ -84,7 +87,9 @@
         }
 
         @media (max-width: 768px) {
-            h1, .redirect-banner {
+
+            h1,
+            .redirect-banner {
                 font-size: 2rem;
             }
 
@@ -102,15 +107,9 @@
             width: 100%;
         }
 
-        footer {
-            width: 100%;
-            margin-top: 20px;
-            padding: 10px;
-            text-align: center;
-            font-size: 1rem;
-            color: #fff;
-            background: #333;
-            flex: 0;
+        .email-link {
+            margin-top: 1000px;
+
         }
     </style>
 </head>
@@ -133,7 +132,11 @@
             <div class="balloon"></div>
             <div class="balloon"></div>
         </div>
+        <p>Email me at: <a href="mailto:da2853@nyu.edu" class="email-link">da2853@nyu.edu</a></p>
     </main>
+
+
 </body>
+
 
 </html>

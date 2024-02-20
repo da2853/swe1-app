@@ -19,12 +19,11 @@ env = environ.Env()
 environ.Env.read_env('swe1app\secret.env')
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = 'ch^xj3dqt123123xfsk_wi2SSSvcjiknjcbvin7n*p7iaqrqk'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['swe1-app.eba-rr2vvmte.us-west-2.elasticbeanstalk.com', 'localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['swe1-app.eba-rr2vvmte.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
