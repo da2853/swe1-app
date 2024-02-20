@@ -21,15 +21,16 @@ environ.Env.read_env('swe1app\secret.env')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['swe1-app.eba-rr2vvmte.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['swe1-app.eba-rr2vvmte.us-west-2.elasticbeanstalk.com', 'localhost', '127.0.0.1']
 
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -105,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'US/Pacific'
+TIME_ZONE = 'America/New_York'
 
 USE_I18N = True
 

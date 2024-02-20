@@ -20,7 +20,7 @@
             overflow: auto;
         }
 
-        h1 {
+        h1, .redirect-banner {
             font-family: 'Lobster', cursive;
             text-align: center;
             font-size: 2.5rem;
@@ -32,11 +32,11 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.2s;
             flex: 0;
-
         }
 
-        h1:hover {
+        h1:hover, .redirect-banner:hover {
             transform: scale(1.2);
+            cursor: pointer;
         }
 
         .balloon {
@@ -63,7 +63,6 @@
         }
 
         @keyframes float {
-
             0%,
             100% {
                 transform: translateY(0);
@@ -85,7 +84,7 @@
         }
 
         @media (max-width: 768px) {
-            h1 {
+            h1, .redirect-banner {
                 font-size: 2rem;
             }
 
@@ -125,6 +124,9 @@
             <div class="balloon"></div>
         </div>
         <h1>Welcome to NYU Software Engineering I: CS-GY 6063!</h1>
+        <!-- New redirect banner below -->
+        <a href="/polls" class="redirect-banner">Check out our Polls!</a>
+        <!-- End of new redirect banner -->
         <div class="balloons-container">
             <div class="balloon"></div>
             <div class="balloon"></div>
@@ -133,6 +135,5 @@
         </div>
     </main>
 </body>
-
 
 </html>
