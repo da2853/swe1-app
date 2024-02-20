@@ -19,7 +19,8 @@ env = environ.Env()
 environ.Env.read_env('swe1app\secret.env')
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ch^xj3dqt123123xfsk_wi2SSSvcjiknjcbvin7n*p7iaqrqk'
+
+SECRET_KEY = env('SECRET_KEY')
 
 DEBUG = False
 
