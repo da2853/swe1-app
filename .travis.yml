@@ -7,7 +7,7 @@ install:
 
 script:
   - black --check .
-  # - flake8 .
+  - flake8 .
   # - coverage run -m pytest
   # - coverage report
   # - coverage xml
