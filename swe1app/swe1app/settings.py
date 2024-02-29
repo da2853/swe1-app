@@ -11,19 +11,21 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import environ
+
+# import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
-env = environ.Env()
-environ.Env.read_env("swe1app\\secret.env")
+# env = environ.Env()
+# environ.Env.read_env("swe1app\\secret.env")
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = env("SECRET_KEY")
-
+# SECRET_KEY = env("SECRET_KEY")
+# SECRET_KEY = os.environ.get("SECRET_KEY_VAL")
+SECRET_KEY = "TESTING"
 DEBUG = False
 
 ALLOWED_HOSTS = ["swe1-app.eba-rr2vvmte.us-west-2.elasticbeanstalk.com"]
