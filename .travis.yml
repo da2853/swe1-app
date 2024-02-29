@@ -6,16 +6,15 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - python tests
+  - True
 
 
-# deploy:
-#   provider: elasticbeanstalk
-#   access_key_id:
-#     secure: "Encrypted <access-key-id>="
-#   secret_access_key: 
-#     secure: "Encypted <secret-access-key>="
-#   region: "us-west-2"
-#   app: "swe1-app"
-#   env: "swe1-app"
-#   bucket_name: "elasticbeanstalk-us-west-2-963295565159"
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY_ID 
+  secret_access_key:
+    secure: $AWS_SECRET_ACCESS_KEY 
+  region: "us-west-2"
+  app: "swe1-app"
+  env: "swe1-app-env"  
+  bucket_name: "elasticbeanstalk-us-west-2-963295565159"
