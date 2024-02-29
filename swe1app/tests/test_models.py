@@ -1,6 +1,4 @@
-from django.test import TestCase
+import pytest
 
-
-class ModelTestCase(TestCase):
-    def test_true(self):
-        self.assertTrue(True)
+def test_always_passes():
+    assert True
