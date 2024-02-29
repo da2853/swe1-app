@@ -19,7 +19,7 @@ from swe1app import views
 import polls
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    path('polls/', include('polls.urls'))
+    path("admin/", admin.site.urls),
+    path("", views.home, name="home"),
+    path("polls/", include("polls.urls")),
 ]
