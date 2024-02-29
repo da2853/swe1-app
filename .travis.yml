@@ -5,13 +5,13 @@ python:
 install:
   - pip install -r requirements.txt
 
-# script:
-#   - black --check .
-#   - flake8 .
-#   - coverage run -m pytest
-#   - coverage report
-#   - coverage xml
-#   - coveralls
+script:
+  - black --check .
+  - flake8 .
+  - coverage run -m pytest
+  - coverage report
+  - coverage xml
+  - coveralls
 
 deploy:
   provider: elasticbeanstalk
