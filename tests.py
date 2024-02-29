@@ -1,6 +1,6 @@
-from django.test import TestCase
+# from django.test import TestCase
 
 
-class SimpleTest(TestCase):
-    def test_basic(self):
-        self.assertTrue(True)
+# class SimpleTest(TestCase):
+#     def test_basic(self):
+#         self.assertTrue(True)

@@ -17,7 +17,8 @@ import environ
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 env = environ.Env()
-environ.Env.read_env("swe1app\secret.env")
+environ.Env.read_env("swe1app\\secret.env")
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
@@ -87,9 +88,10 @@ DATABASES = {
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
-    },
+    "NAME": (
+        "django.contrib.auth.password_validation."
+        "UserAttributeSimilarityValidator"
+    ),
     {
         "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
     },
