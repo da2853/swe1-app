@@ -6,21 +6,21 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - true
-  # - black --check .
+  # - true
+  - black --check .
   # - flake8 .
-  # - coverage run -m pytest
+  - coverage run -m pytest
   # - coverage report
   # - coverage xml
   # - coveralls
 
-deploy:
-  provider: elasticbeanstalk
-  access_key_id: $AWS_ACCESS_KEY_ID 
-  secret_access_key: $AWS_SECRET_ACCESS_KEY 
-  region: "us-west-2"
-  app: "swe1-app"
-  env: "swe1-app"  
-  bucket_name: "elasticbeanstalk-us-west-2-963295565159"
-  on:
-    branch: main
+# deploy:
+#   provider: elasticbeanstalk
+#   access_key_id: $AWS_ACCESS_KEY_ID 
+#   secret_access_key: $AWS_SECRET_ACCESS_KEY 
+#   region: "us-west-2"
+#   app: "swe1-app"
+#   env: "swe1-app"  
+#   bucket_name: "elasticbeanstalk-us-west-2-963295565159"
+#   on:
+#     branch: main
