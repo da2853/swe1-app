@@ -1,0 +1,5 @@
+branch-defaults:
+  master:
+    environment: swe1-app
+global:
+  profile: eb-cli
