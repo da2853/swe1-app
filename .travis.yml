@@ -20,7 +20,7 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY 
   region: "us-west-2"
   app: "swe1-app"
-  env: "swe1-app-env"  
+  env: "swe1-app"  
   bucket_name: "elasticbeanstalk-us-west-2-963295565159"
     on:
       branch: master 
