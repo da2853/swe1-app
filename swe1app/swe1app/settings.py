@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = "TESTING"
 DEBUG = False
 
-ALLOWED_HOSTS = ["swe1-app.eba-rr2vvmte.us-west-2.elasticbeanstalk.com"]
+ALLOWED_HOSTS = ["swe1-app.eba-rr2vvmte.us-west-2.elasticbeanstalk.com", "127.0.0.1"]
 
 
 # Application definition
@@ -58,7 +58,6 @@ ROOT_URLCONF = "swe1app.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        # Add the path to your 'template' folder here
         "DIRS": [BASE_DIR / "swe1app/templates"],  # Update this line
         "APP_DIRS": True,
         "OPTIONS": {

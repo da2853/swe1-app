@@ -9,9 +9,9 @@ script:
   - black --check .
   - flake8 .
   # - coverage run -m pytest
-  - coverage report
-  - coverage xml
-  - coveralls
+  # - coverage report
+  # - coverage xml
+  # - coveralls
 
 
 deploy:
