@@ -8,7 +8,7 @@ install:
 script:
   - black --check .
   - flake8 .
-  - coverage run -m pytest
+  - coverage run test_models.py
   - coverage report
   - coverage xml
   - coveralls
