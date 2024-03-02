@@ -13,14 +13,16 @@ script:
   # - coverage xml
   # - coveralls
 
+before_deploy:
+  - cd swe1app  # Change to the swe1app directory before deploying
 
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: "us-west-2"
-  app: "swe1-app"
-  env: "swe1-app"
+  app: "swe-app2"
+  env: "swe-app2"
   bucket_name: "elasticbeanstalk-us-west-2-963295565159"
   on:
     all_branches: true
