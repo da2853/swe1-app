@@ -8,10 +8,10 @@ install:
 script:
   - black --check .
   - flake8 .
-  # - coverage run -m pytest
-  # - coverage report
-  # - coverage xml
-  # - coveralls
+  - coverage run -m pytest
+  - coverage report
+  - coverage xml
+  - coveralls
 
 before_deploy:
   - cd swe1app  # Change to the swe1app directory before deploying
