@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = "TESTING"
 DEBUG = False
 
-ALLOWED_HOSTS = ["swe1-app.eba-rr2vvmte.us-west-2.elasticbeanstalk.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["swe-app2.us-west-2.elasticbeanstalk.com", "127.0.0.1"]
 
 
 # Application definition
