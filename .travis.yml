@@ -11,8 +11,8 @@ script:
   - cd swe1app
   - python manage.py migrate
   - python manage.py test
-  - coverage run manage.py test  # Run tests with coverage
-  - coverage report  # Generate coverage report
+  - coverage run manage.py test 
+  - coverage report  
   
 after_success:
   - coveralls
